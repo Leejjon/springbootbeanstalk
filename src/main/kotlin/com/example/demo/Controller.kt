@@ -11,13 +11,12 @@ import org.springframework.web.bind.annotation.RestController
 
 
 @RestController
-class Controller(@Value("\${hello}") val hello: String) {
+class Controller(@Value("\${iets.met.punten}") val hello: String) {
     @Autowired
     private val environment: Environment? = null
 
     @GetMapping("/")
     fun blog(model: Model): String {
-        println(environment?.getProperty("hello"))
         return hello
     }
 }
