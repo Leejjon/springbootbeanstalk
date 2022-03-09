@@ -1,3 +1,4 @@
-spring.config.import: optional:aws-secretsmanager:test/secretmanager
+iets.met.punten: ok
+spring.config.import: optional:aws-secretsmanager:/test/secretmanager
 server:
   port: 5000
